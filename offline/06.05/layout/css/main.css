@@ -1,0 +1,280 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing:inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: 'Nunito Sans';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+} 
+
+/* header */
+.headline {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.site_logo {
+    float: left;
+}
+
+.menu {
+    list-style: none;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_item {
+    float: left;
+}
+
+.menu_item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu_link {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #191919;
+}
+
+.menu_link:hover {
+    color: #10c9c3;
+}
+
+/* banner_section */
+
+.banner_section {
+    background-color: #3e3e3e;
+    padding-top: 122px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.banner_title,
+.banner_subtitle {
+    color: #fff;
+}
+
+.banner_title {
+    font-size: 38px;
+}
+
+.banner_subtitle {
+    font-size: 18px;
+    font-family: 'Nunito Sans';
+}
+
+/* stat_section */
+.advantages_section {
+    background-color: #10c9c3;
+    padding-top: 98px;
+    padding-bottom: 98px;
+}
+
+.advantages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quantity,
+.advantages_name {
+    color: #fff;
+    margin: 0;
+    width: 270px;
+}
+
+.advantages_items {
+    float: left;
+    padding-left: 4px;
+}
+
+.advantages_items::before {
+    content: '';
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages_items:not(:last-child) {
+    margin-right: 28px;
+}
+
+.icon_bag::before {
+    background-image: url(../img/icon/icon-bag.png);
+}
+
+.icon_cloak::before {
+    background-image: url(../img/icon/icon-cloak.png);
+}
+
+.icon_star::before {
+    background-image: url(../img/icon/icon-star.png);
+}
+
+.icon_like::before {
+    background-image: url(../img/icon/icon-like.png);
+}
+
+/* about section */
+.about_section {
+    margin-bottom: 106px;
+    background-image: linear-gradient(to right, #e1e1e1 0%, #e1e1e1 50%, #f5f5f5 50%, #f5f5f5 100%);
+}
+
+.wrap_img,
+.wrap_about {
+    width: 50%;
+}
+
+.wrap_img {
+    float: left;
+}
+
+.wrap_about {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 80px;
+    float: right;
+}
+
+.about_title {
+    font-size: 30px;
+    margin: 0 0 40px 0;
+}
+
+.about_subtitle {
+    margin: 0 0 36px 0;
+
+}
+
+.atoud_dec {
+    margin-top: 0;
+    margin-bottom: 38px;
+}
+
+
+/* project_section */
+
+.project_section {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.project_title {
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 42px;
+
+}
+
+.project_subtitle {
+    font-family: 'Nunito Sans';
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.talk_button {
+    display: block;
+    width: 180px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #10c9c3;
+    cursor: pointer;
+    margin: 0 auto;
+    border: 0;
+}
+
+/* footer */
+.footer {
+    color: #bcbcbc;
+    background-color: #141414;
+    padding-top: 100px;
+}
+
+.wrap_copy,
+.wrap_contact,
+.wrap_menu,
+.wrap_news,
+.wrap_soc {
+    float: left;
+}
+
+.wrap_copy {
+    width: 230px;
+    margin-right: 247px;
+}
+
+.copy_title {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.copy_subtitle {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Nunito Sans';
+}
+
+
+
+/* to home  */
+.home {
+    display: block;
+    position: sticky;
+    width: 80px;
+    height: 80px;
+    background: teal;
+    border-radius: 50%;
+    bottom: 60px;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    background-image: url(../img/icon/chevron-up-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home:hover {
+    opacity: 1;
+}
