@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 /*progress top bar*/
 const progress = document.querySelector('.progress');
@@ -13,12 +13,3 @@ function progressBar(e) {
     progress.style.width = per + '%';
 }
 
-/*3D card transform*/
-const card = document.querySelectorAll('.card');
-
-card.addEventListener
-
-function rotate(event) {
-    const cardItem = this.querySelector('.card__item');
-    cardItem.innerText = event.clientX;
-}

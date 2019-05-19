@@ -675,7 +675,7 @@ body {
 
 .member_wrap {
     margin-bottom: 40px;
-    transition: transform 0.2;
+    transition: transform 0.2s;
 }
 
 .name,
