@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing:inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: #e67e22;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.card-item   {
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    transition: transform 0.2s;
+}
