@@ -693,6 +693,9 @@ body {
 
 .member_wrap {
     margin-bottom: 40px;
+}
+
+.member_inner {
     transition: transform 0.2s;
 }
 
